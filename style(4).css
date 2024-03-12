@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #121321;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section::before {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #9c27b0, #f3f3f5);
+  transform: translate(-293px, -35%);
+}
+section::after {
+  content: "";
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  transform: translate(298px, 28%);
+  background: linear-gradient(90deg, #9c27b0, #f3f3f5);
+}
+.conatiner {
+  height: 319px;
+  width: 584px;
+  z-index: 1;
+  position: relative;
+  transform-style: preserve-3d;
+}
+.cardfrontface {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 31px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 25px 45px;
+}
+header {
+  padding-top: 4px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 140px;
+}
+.mastercard {
+  font-size: 1.5rem;
+  padding-left: 5px;
+  padding-top: 16px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.mastercardimage {
+  background-image: url(mastercard-26161.png);
+  height: 75px;
+  width: 92px;
+  background-size: cover;
+}
+.chip {
+  background-image: url(chip.png);
+  height: 45px;
+  width: 66px;
+  background-size: cover;
+  margin-top: 8px;
+}
+.cardinfo {
+  margin-top: 61px;
+  margin-left: 41px;
+}
+.cardnotext {
+  font-size: 1rem;
+  padding-left: 3px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.cardnonumber {
+  font-size: 2rem;
+  color: white;
+  padding-top: 5px;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.customerdetails {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ownername {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  padding-right: 165px;
+}
+.validity {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.validitydate {
+  padding-top: 4px;
+}
+/* back portion */
+.conatiner2 {
+  height: 319px;
+  width: 584px;
+  z-index: 1;
+  position: absolute;
+}
+
+.cardbackface {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 31px;
+  backdrop-filter: blur(25px);
+  box-shadow: 0 25px 45px;
+  position: absolute;
+  animation: flip ease-in-out 8s infinite normal;
+}
+@keyframes flip {
+  0% {
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+  }
+}
+
+.servicecalls {
+  padding-top: 19px;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Protest Revolution", sans-serif;
+  font-family: "Protest Riot", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+}
+main {
+  padding-top: 14px;
+}
+.blackline {
+  background-color: black;
+  height: 49px;
+}
+.whiteline {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+.white {
+  background-color: white;
+  height: 49px;
+  width: 476px;
+  border-radius: 4px;
+  margin-left: 42px;
+}
+.code {
+  background-color: rgba(255, 255, 255, 0.662);
+  height: 25px;
+  padding-top: 2px;
+  border-radius: 3px;
+}
+.extra {
+  color: white;
+  margin-left: 13px;
+  margin-top: 32px;
+}
